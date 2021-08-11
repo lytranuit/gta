@@ -3417,10 +3417,8 @@ ul.navMain__links--sec li {
   position: relative;
   z-index: 10;
   width: 100%;
-  min-height: 569px;
   background: url(/assets/images/screens/footer/bg.png) no-repeat top;
   background-size: cover;
-  padding-top: 125px;
   padding-bottom: 0 !important;
   margin-top: -125px !important;
 }
@@ -4402,7 +4400,6 @@ nav.footerNav ul li:last-of-type:before {
   position: relative;
   z-index: 10;
   width: 100%;
-  min-height: 912px;
   background: url(/assets/images/screens/playnow/playnow-bg.png) no-repeat top;
   background-size: cover;
   padding: 150px 0 220px;
