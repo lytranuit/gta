@@ -3422,9 +3422,6 @@ ul.navMain__links--sec li {
   padding-bottom: 0 !important;
   margin-top: -125px !important;
 }
-.footer__container {
-  min-height: 379px;
-}
 .footer__agreements {
   width: 100%;
   min-height: 60px;
@@ -4517,6 +4514,12 @@ nav.footerNav ul li:last-of-type:before {
   background-size: cover;
   padding-bottom: 50px;
 }
+
+@media screen and (max-width: 1025px) {
+  .casemain__wrapper {
+    min-height: initial;
+  }
+}
 .casemain__wrapper .casemain__gangsta {
   position: absolute;
   z-index: 1;
@@ -4535,7 +4538,6 @@ nav.footerNav ul li:last-of-type:before {
 }
 .casemain__wrapper .casemain__container {
   position: relative;
-  min-height: 805px;
 }
 .casemain__wrapper .casemain__slogan {
   font: 700 30px Geometria;
@@ -4546,6 +4548,14 @@ nav.footerNav ul li:last-of-type:before {
   position: relative;
   z-index: 2;
   margin-top: 315px;
+}
+
+@media screen and (max-width: 1025px) {
+  .casemain__wrapper .casemain__header {
+    position: relative;
+    z-index: 2;
+    margin-top: 200px;
+  }
 }
 .casemain__wrapper .casemain__header h1 {
   margin-top: 15px;
