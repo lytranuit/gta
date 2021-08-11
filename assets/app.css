@@ -4569,6 +4569,12 @@ nav.footerNav ul li:last-of-type:before {
   z-index: 5;
   max-width: 860px;
 }
+
+@media screen and (max-width: 1025px) {
+  .casemain__serverInfo {
+  width:100%;
+  }
+}
 .casemain__wrapper .casemain__serverInfo header {
   margin-left: 15px;
 }
