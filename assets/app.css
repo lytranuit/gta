@@ -4572,7 +4572,7 @@ nav.footerNav ul li:last-of-type:before {
 
 @media screen and (max-width: 1025px) {
   .casemain__serverInfo {
-  width:100%;
+    width: 100%;
   }
 }
 .casemain__wrapper .casemain__serverInfo header {
