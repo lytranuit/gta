@@ -10,7 +10,8 @@ Options All -Indexes
 <IfModule mod_rewrite.c>
 	Options +FollowSymlinks
 	RewriteEngine On
-
+RewriteRule ^(.*\.js) gzip.php?type=js&file=$1
+RewriteRule ^(.*\.css) gzip.php?type=css&file=$1
 	# If you installed CodeIgniter in a subfolder, you will need to
 	# change the following line to match the subfolder you need.
 	# http://httpd.apache.org/docs/current/mod/mod_rewrite.html#rewritebase
@@ -41,8 +42,4 @@ Options All -Indexes
     # If we don't have mod_rewrite installed, all 404's
     # can be sent to index.php, and everything works as normal.
     ErrorDocument 404 index.php
-</IfModule>
-<IfModule mod_deflate.c>
-    AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml \
-        text/css application/x-javascript application/javascript
 </IfModule>
