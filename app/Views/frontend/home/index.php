@@ -81,7 +81,8 @@
                         <div class="navMain__logo" id="logo__main">
                             <img src="./assets/logo.png" alt="chatrp logo" style="width: 150px;">
                         </div>
-
+                        <h2 style="text-transform: uppercase;
+    color: #f7ee00;">CHƠI GAME VUI NHƯNG VẪN CÓ ÍCH</h2>
                     </div>
                 </nav>
             </div>
@@ -124,6 +125,7 @@
                     <div class="row">
                         <div class="col-12">
                             <header class="casemain__header wow fadeInLeft" style="visibility: visible;">
+
                                 <h2 class="casemain__slogan">
                                     Chơi GTA 5 Theo Phong Cách Mới </h2>
                                 <h1>
