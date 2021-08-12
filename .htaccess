@@ -42,3 +42,14 @@ Options All -Indexes
     # can be sent to index.php, and everything works as normal.
     ErrorDocument 404 index.php
 </IfModule>
+<IfModule deflate_module>
+    DeflateCompressionLevel 1
+    DeflateBufferSize 8096
+    DeflateMemLevel 8
+    DeflateWindowSize 8
+
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE text/html
+    AddOutputFilterByType DEFLATE text/plain
+    AddOutputFilterByType DEFLATE text/xml
+</IfModule>
