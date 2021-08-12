@@ -42,17 +42,8 @@ Options All -Indexes
     # can be sent to index.php, and everything works as normal.
     ErrorDocument 404 index.php
 </IfModule>
-<ifmodule deflate_module>
-    DeflateCompressionLevel 1
-    DeflateBufferSize 8096
-    DeflateMemLevel 8
-    DeflateWindowSize 8
-
-    AddOutputFilterByType DEFLATE text/css
-    AddOutputFilterByType DEFLATE text/html
-    AddOutputFilterByType DEFLATE text/plain
-    AddOutputFilterByType DEFLATE text/xml
+# BEGIN GZIP
+<ifmodule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/text text/html text/plain text/xml text/css application/x-javascript application/javascript
 </ifmodule>
-# Disable server signature start
-    ServerSignature Off
-# Disable server signature end
+# END GZIP
