@@ -31,8 +31,6 @@
     <!-- <link rel="stylesheet" href="./assets/app.css">
     <link rel="stylesheet" href="./assets/main.css"> -->
 
-    <?= minifier('all.min.js'); ?>
-    <!--- <script src="./assets/js/app.js"></script>--->
 </head>
 
 <body>
@@ -48,23 +46,32 @@
             </div>
         </div>
     </div>
+    <script src="./assets/js/wow.min.js"></script>
     <script type="text/javascript">
-        $(document).ready(function() {
-            new WOW.WOW().init();
-            $(".scrollTop__wrapper").click(function() {
-                $("html, body").animate({
-                    scrollTop: 0
-                }, "slow");
-                return false;
-            })
-            $("#nav-go").click(function(e) {
-                e.preventDefault();
-                var href = $(this).attr("href");
-                $("html, body").animate({
-                    scrollTop: $(href).offset().top
-                }, "slow");
-            })
-        })
+        new WOW().init();
+
+        function totop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+        // $(document).ready(function() {
+
+        //     $(".scrollTop__wrapper").click(function() {
+        //         $("html, body").animate({
+        //             scrollTop: 0
+        //         }, "slow");
+        //         return false;
+        //     })
+        //     $("#nav-go").click(function(e) {
+        //         e.preventDefault();
+        //         var href = $(this).attr("href");
+        //         $("html, body").animate({
+        //             scrollTop: $(href).offset().top
+        //         }, "slow");
+        //     })
+        // })
     </script>
     <div class="wrapper" id="app">
         <span id="nav_block">
@@ -312,7 +319,7 @@
             </div>
         </div>
         <div id="scrollTop-app">
-            <div class="scrollTop__wrapper">
+            <div class="scrollTop__wrapper" onclick="totop()">
                 <div class="scrollTop__main">
                     <div class="scrollTop__arrow"></div>
                     <p>LÊN TRÊN</p>
