@@ -27,14 +27,12 @@
     <link rel="apple-touch-icon" href="/assets/images/icons/favicon.ico">
 
     <?= minifier('all.min.css'); ?>
-    <?= minifier('all.min.js'); ?>
 
     <!-- <link rel="stylesheet" href="./assets/app.css">
     <link rel="stylesheet" href="./assets/main.css"> -->
-    <!---
-    <script src="./assets/app.js" defer=""></script>
-    <script src="./assets/common.js"></script> --->
 
+    <?= minifier('all.min.js'); ?>
+    <!--- <script src="./assets/js/app.js"></script>--->
 </head>
 
 <body>
@@ -51,7 +49,7 @@
         </div>
     </div>
     <script type="text/javascript">
-        domReady(function() {
+        $(document).ready(function() {
             new WOW.WOW().init();
             $(".scrollTop__wrapper").click(function() {
                 $("html, body").animate({
@@ -66,7 +64,7 @@
                     scrollTop: $(href).offset().top
                 }, "slow");
             })
-        });
+        })
     </script>
     <div class="wrapper" id="app">
         <span id="nav_block">

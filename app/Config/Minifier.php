@@ -125,7 +125,7 @@ class Minifier extends \Michalsn\Minifier\Config\Minifier
 
     public $js = [
         'all.min.js' => [
-            'app.js', 'common.js',
+            'app.js',
         ]
     ];
 
@@ -141,7 +141,7 @@ class Minifier extends \Michalsn\Minifier\Config\Minifier
 
     public $css = [
         'all.min.css' => [
-            'app.css', 'main.css',
+            'app.css',
         ],
     ];
 }
