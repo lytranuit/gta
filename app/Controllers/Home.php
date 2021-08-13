@@ -29,8 +29,11 @@ class Home extends BaseController
     {
         $this->data['title'] =  "Trang chủ" . $this->data['title'];
         //echo $this->data['title'];
-        //die();  
-
+        //die(); 
+        $negotiate = \Config\Services::negotiator();
+        $type = $negotiate->encoding(['gzip']);
+        // print_r($type);
+        // die();
         return view($this->data['content'], $this->data);
     }
 }
