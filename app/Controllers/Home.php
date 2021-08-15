@@ -15,7 +15,7 @@ class Home extends BaseController
      */
     protected $session;
 
-    public function __construct()
+    public function _remap()
     {
         // Most services in this controller require
         // the session to be started - so fire it up!
