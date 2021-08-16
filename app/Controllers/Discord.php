@@ -4,7 +4,7 @@ namespace App\Controllers;
 
 class Discord extends BaseController
 {
-    public function __remap()
+    public function _remap()
     {
         redirect()->to("https://discord.com/invite/7TeAJvztmH");
     }
