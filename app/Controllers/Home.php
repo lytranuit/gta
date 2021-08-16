@@ -25,6 +25,6 @@ class Home extends BaseController
         // $type = $negotiate->encoding(['gzip']);
         // print_r($type);
         // die();
-        return view('index', $this->data);
+        return view($this->data['content'], $this->data);
     }
 }
