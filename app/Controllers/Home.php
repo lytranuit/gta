@@ -4,6 +4,9 @@ namespace App\Controllers;
 
 class Home extends BaseController
 {
+    public function _remap(){
+        return view($this->data['content'], $this->data); 
+    }
     public function index()
     {
         $this->data['title'] =  "Trang chủ" . $this->data['title'];
